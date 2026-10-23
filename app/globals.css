@@ -1,0 +1,155 @@
+:root {
+  --bg: #f6f3ec;
+  --surface: #ffffff;
+  --ink: #1e2a1f;
+  --muted: #5b6058;
+  --accent: #2f6b4f;
+  --accent-soft: #e7f0ea;
+  --price: #d9622b;
+  --line: #e4dfd2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+a {
+  color: var(--accent);
+}
+
+.page {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 28px 20px 60px;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+h1 {
+  font-size: 27px;
+  font-weight: 800;
+  margin: 0 0 20px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 24px 0 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.loja-nome {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.categoria-tag {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 4px 9px;
+  border-radius: 999px;
+}
+
+.produto {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.precos {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.preco {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--price);
+}
+
+.preco-anterior {
+  font-size: 14px;
+  color: #9a978c;
+  text-decoration: line-through;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.validade {
+  color: var(--muted);
+}
+
+.voltar {
+  display: inline-block;
+  margin-bottom: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.whatsapp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 14px;
+  border-radius: 14px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.empty,
+.error {
+  color: var(--muted);
+  font-size: 14px;
+}
